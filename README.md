@@ -62,3 +62,13 @@ This will create a folder name “build” containing all the final files.
 https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/policy.json
 
 ![bucket policy](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/6.png)
+
+## Get s3 static website endpoint
+![s3 endpoint](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/7.png)
+
+## Open the endpoint url
+![login page](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/8.png)
+
+![after login](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/9.png)
+
+![add notes](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/10.png)
