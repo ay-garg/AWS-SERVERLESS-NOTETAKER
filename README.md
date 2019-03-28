@@ -33,11 +33,8 @@ From wherever you checkout repos: https://github.com/ayush-garg-github/AWS-SERVE
 ## Configure API and Authentication:
 ![Cognito and API](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/2.png)
 
-## When schema file get opened, enter this and save file:
-type Note @model @auth(rules: [{ allow: owner }]) {
-  id: ID!
-  note: String!
-}
+## When schema file get opened, enter text from this file:
+https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/schema.graphql
 
 ## Update resources in cloud:
 `amplify push`
