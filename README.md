@@ -26,43 +26,57 @@ From wherever you checkout repos: https://github.com/ayush-garg-github/AWS-SERVE
 ## Add aws amplify library:
 `yarn add aws-amplify aws-amplify-react`
 
-Run amplify init:
+## Run amplify init:
+![amplify init](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/1.png)
  
 
-Configure API and Authentication:
- 
-When schema file get opened, enter this and save file:
+## Configure API and Authentication:
+![Cognito and API](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/2.png)
+
+## When schema file get opened, enter this and save file:
 type Note @model @auth(rules: [{ allow: owner }]) {
   id: ID!
   note: String!
 }
 
+## Update resources in cloud:
+`amplify push`
 
+![amplify push](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/3.png)
 
-Update resource in cloud:
+## Output should be like this:
+![amplify push output](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/4.png) 
 
-
- 
-
-Output should be like this:
- 
-
-Create an optimized final build:
+## Create an optimized final build:
+`npm run-script build`
 
 This will create a folder name “build” containing all the final files.
 
-Create s3 bucket:
+## Create s3 bucket:
+`aws s3 mb s3://serverless-notetaker`
 
+## Copy files from “build” folder to the bucket:
+`aws s3 cp –recursive build/ s3://serverless-notetaker`
 
-Copy files from “build” folder to the bucket:
-
-
-
-
-
-
-Configure s3 bucket for static website hosting:
+## Configure s3 bucket for static website hosting:
+![s3 static](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/5.png)
  
+## Apply bucket policy:
 
-Apply bucket policy:
- 
+{
+    "Id": "Policy1553800173182",
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1553800171310",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::serverless-notetaker/*",
+            "Principal": "*"
+        }
+    ]
+}
+
+![bucket policy](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/6.png)
