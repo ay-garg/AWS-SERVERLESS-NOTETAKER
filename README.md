@@ -1,33 +1,29 @@
-## `Setup:`
+## Setup:
 
-Install AWS CLI:
+## Install AWS CLI:
 https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
 
-Configuring AWS CLI:
+## Configuring AWS CLI:
 https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
 
-Install Node.js and npm:
+## Install Node.js and npm:
 You can follow instructions from npm website: https://www.npmjs.com/get-npm
 
-Install AWS-Amplify-CLI:
+## Install AWS-Amplify-CLI:
 https://aws-amplify.github.io/docs/
 
-Install yarn:
+## Install yarn:
 Proper guide to install: https://yarnpkg.com/en/docs/install
 
-Clone this repo:
+## Clone this repo:
 From wherever you checkout repos: https://github.com/ayush-garg-github/AWS-SERVERLESS-NOTETAKER.git
 
-Install node packages:
+## Install node packages:
+# `cd AWS-SERVERLESS-NOTETAKER`
+# `npm install`
 
-
-
-
-Add aws amplify library:
-
-
-
-
+## Add aws amplify library:
+# `yarn add aws-amplify aws-amplify-react`
 
 Run amplify init:
  
