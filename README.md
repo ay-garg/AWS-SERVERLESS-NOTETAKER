@@ -59,21 +59,6 @@ This will create a folder name “build” containing all the final files.
 ![s3 static](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/5.png)
  
 ## Apply bucket policy:
-
-{
-    "Id": "Policy1553800173182",
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "Stmt1553800171310",
-            "Action": [
-                "s3:GetObject"
-            ],
-            "Effect": "Allow",
-            "Resource": "arn:aws:s3:::serverless-notetaker/*",
-            "Principal": "*"
-        }
-    ]
-}
+https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/policy.json
 
 ![bucket policy](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/6.png)
