@@ -19,11 +19,11 @@ Proper guide to install: https://yarnpkg.com/en/docs/install
 From wherever you checkout repos: https://github.com/ayush-garg-github/AWS-SERVERLESS-NOTETAKER.git
 
 ## Install node packages:
-# `cd AWS-SERVERLESS-NOTETAKER`
-# `npm install`
+`cd AWS-SERVERLESS-NOTETAKER`
+`npm install`
 
 ## Add aws amplify library:
-# `yarn add aws-amplify aws-amplify-react`
+`yarn add aws-amplify aws-amplify-react`
 
 Run amplify init:
  
