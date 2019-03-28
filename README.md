@@ -20,6 +20,7 @@ From wherever you checkout repos: https://github.com/ayush-garg-github/AWS-SERVE
 
 ## Install node packages:
 `cd AWS-SERVERLESS-NOTETAKER`
+
 `npm install`
 
 ## Add aws amplify library:
