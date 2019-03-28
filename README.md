@@ -72,3 +72,6 @@ https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/
 ![after login](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/9.png)
 
 ![add notes](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/10.png)
+
+## To clean all deployed resources on AWS:
+`amplify delete`
