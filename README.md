@@ -21,7 +21,7 @@ From wherever you checkout repos: https://github.com/ayush-garg-github/AWS-SERVE
 ## Install node packages:
 `cd AWS-SERVERLESS-NOTETAKER`
 
-`npm install`
+`yarn install`
 
 ## Add aws amplify library:
 `yarn add aws-amplify aws-amplify-react`
