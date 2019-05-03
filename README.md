@@ -53,7 +53,7 @@ This will create a folder name “build” containing all the final files.
 `aws s3 mb s3://serverless-notetaker`
 
 ## Copy files from “build” folder to the bucket:
-`aws s3 cp –recursive build/ s3://serverless-notetaker`
+`aws s3 cp --recursive build/ s3://serverless-notetaker`
 
 ## Configure s3 bucket for static website hosting:
 ![s3 static](https://github.com/ayush-garg-github/resources/blob/master/serverless-notetaker/5.png)
